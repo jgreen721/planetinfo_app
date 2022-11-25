@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;700&family=League+Spartan:wght@100;300;700&display=swap");
+
+html {
+  font-size: 62.5%;
+  background: var(--darkblue);
+  color: var(--white);
+  /* overflow-x: hidden; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --darkblue: hsl(240, 67%, 8%);
+  --lightblue: hsl(194, 48%, 49%);
+  --lightorange: hsl(33, 82%, 61%);
+  --red: hsl(2, 68%, 53%);
+  --darkorange: hsl(17, 73%, 46%);
+  --darkgray: hsl(240, 17%, 26%);
+  --lightgray: hsl(240, 6%, 54%);
+  --purple: hsl(263, 67%, 51%);
+  --redorange: hsl(10, 63%, 51%);
+  --teal: hsl(169, 73%, 44%);
+  --blue: hsl(222, 87%, 56%);
+  --antonio: "Antonio", sans-serif;
+  --spartan: "League Spartan", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  /* background: var(--darkblue);
+  color: var(--white); */
+  height: 102.4rem;
+  width: 144rem;
+  /* border: 2px solid red; */
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-content {
+  transform: translateY(11rem);
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+@media screen and (max-width: 785px) {
+  .app {
+    width: 76.8rem;
+    height: 102rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app {
+    width: 37.5rem;
+    height: 95rem;
+  }
+  .main-content {
+    transform: translateY(8rem);
+    /* border: 2px solid red; */
+  }
+}

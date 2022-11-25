@@ -1,0 +1,175 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  max-width: 144rem;
+  padding: 2.2rem 3.2rem;
+  position: fixed;
+  z-index: 5;
+  background: var(--darkblue);
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--white);
+  opacity: 50%;
+}
+
+.nav-header {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  letter-spacing: -1.05px;
+  font-family: var(--antonio);
+  font-weight: 400;
+}
+
+.planet-list {
+  display: flex;
+  font-family: var(--spartan);
+  font-weight: 700;
+}
+
+.planet-nav-item {
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 0 3rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.planet-nav-item:hover {
+  transform: scale(1.1);
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: none;
+  transition: 0.3s ease;
+}
+
+.burger-icon {
+  transform: scale(1.1);
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0vw;
+  display: none;
+  transition: 0.3s ease;
+  background: var(--darkblue);
+
+  /* transform: translateX(150vw); */
+}
+
+.hide-menu {
+  transform: translateX(125vw);
+}
+
+.mobile-planets-list {
+  padding: 1em;
+}
+
+.mobile-planet-circle {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  /* background: red; */
+}
+
+.mobile-left-flex {
+  display: flex;
+  width: 13.2rem;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.mobile-h3 {
+  font-size: 1.5rem;
+}
+
+.mobile-planet-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+  position: relative;
+  font-family: var(--spartan);
+  text-transform: uppercase;
+  letter-spacing: 1.36px;
+  transition: 0.4s ease;
+}
+
+.mobile-planet-item:hover::after {
+  background: white;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 20%;
+}
+
+.mobile-planet-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+
+  background: var(--white);
+  opacity: 50%;
+  content: "";
+}
+
+@media screen and (max-width: 775px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0em; */
+  }
+
+  .planet-list {
+    margin-top: 3.9rem;
+    margin-bottom: 2.7rem;
+    width: 66.5rem;
+    /* border: 2px solid white; */
+    justify-content: space-between;
+  }
+
+  .planet-nav-item {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 6.8rem;
+  }
+  .planet-list {
+    display: none;
+  }
+  .mobile-menu {
+    height: 66.7rem;
+    width: 37.5rem;
+    /* border: 3px solid white; */
+    display: block;
+    top: 6.8rem;
+  }
+
+  .burger-icon {
+    display: block;
+  }
+}
