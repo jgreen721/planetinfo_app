@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MobileMenu = ({planets,showMobile,setCounter}) => {
+const MobileMenu = ({planets,showMobile,setCounter,setShowMobile}) => {
 
   return (
     <div className={showMobile ? "mobile-menu" : "mobile-menu hide-menu"}>
