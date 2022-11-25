@@ -20,7 +20,7 @@ const MainSection = ({currData}) => {
         </div>
       </div>
       <div className="col-left">
-        <img className="planet-img" style={{color:"purple",fontSize:'3rem'}} src={images[counter].img} />
+        <img className="planet-img" style={{color:"purple",fontSize:'3rem'}} src={counter === 0 ? currData.images.planet : counter === 1 ? currData.images.internal : currData.images.geology } />
       </div>
       <div className="col-right">
         <div className="info-card">

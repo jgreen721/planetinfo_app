@@ -17,7 +17,7 @@ const Navbar = ({planets,setCounter}) => {
         </ul>
         <img onClick={()=>setShowMobile(!showMobile)} className="burger-icon" src="./assets/icon-hamburger.svg" alt="" />
         {/* </div> */}
-        <MobileMenu setCounter={setCounter} showMobile={showMobile} planets={planets}/>
+        <MobileMenu setCounter={setCounter} setShowMobile={setShowMobile} showMobile={showMobile} planets={planets}/>
     </nav>
   )
 }
