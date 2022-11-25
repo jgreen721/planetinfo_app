@@ -46,6 +46,7 @@ a {
   /* border: 2px solid red; */
   margin: 0 auto;
   position: relative;
+  overflow-x: hidden;
 }
 
 .main-content {

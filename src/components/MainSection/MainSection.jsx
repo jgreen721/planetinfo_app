@@ -7,7 +7,7 @@ const MainSection = ({currData}) => {
   if(!currData?.name)return "Loading..."
   return (
     <div className="main-section">
-      <h4>{images[counter].id}</h4>
+    
       <div className="mobile-slider">
         <div className="slider-col">
           <h3 onClick={()=>setCounter(0)} className="mobile-slider-h3">Overview</h3>
